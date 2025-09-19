@@ -10,5 +10,5 @@ export default defineConfig({
       '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
-  base: '/Musicfun/',  // Замените на название вашего репозитория
+  base: '/Musicfun/',  // Указание пути для GitHub Pages
 })
