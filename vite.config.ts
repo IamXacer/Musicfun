@@ -10,4 +10,5 @@ export default defineConfig({
       '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
+  base: '/Musicfun/',  // Это нужно для GitHub Pages
 })
