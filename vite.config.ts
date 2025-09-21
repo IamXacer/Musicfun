@@ -10,5 +10,5 @@ export default defineConfig({
       '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
-  base: '/Musicfun/',  // Указание пути для GitHub Pages
+  base: process.env.NODE_ENV === 'production' ? '/Musicfun/' : '/',
 })
