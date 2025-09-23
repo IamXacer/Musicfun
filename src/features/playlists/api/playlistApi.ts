@@ -4,16 +4,13 @@ import type { PlaylistsResponse} from "@/features/playlists/api/playlistsApi.typ
 export const playlistsApi = createApi({
     reducerPath: 'playlistsApi',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'https://musicfun.it-incubator.app/api/1.0/',
+        baseUrl: import.meta.env.VITE_BASE_URL,
         headers: {
-            'API-KEY': 'f5f67943-1b44-41ee-8cd2-e48e43faf8e4',
+            'API-KEY': import.meta.env.VITE_API_KEY,
         },
     }),
     endpoints: (build) => ({
         fetchPlaylists: build.query<PlaylistsResponse, void>({
-            query: () => 'playlists',
-        }),
-        createPlaylist: build.mutation<any, any>({
             query: () => 'playlists',
         }),
     }),
