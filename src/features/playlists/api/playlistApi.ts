@@ -13,6 +13,9 @@ export const playlistsApi = createApi({
         fetchPlaylists: build.query<PlaylistsResponse, void>({
             query: () => 'playlists',
         }),
+        createPlaylist: build.mutation<any, any>({
+            query: () => 'playlists',
+        }),
     }),
 })
 
